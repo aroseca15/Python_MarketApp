@@ -247,27 +247,93 @@ command = ""
 started = False
 # stopped = True
 
-while True:
-    command = input(">").lower()
-    if command == "start":
-        if started == True:
-            print("Car is running")
-        else:
-            started = True
-            print("Vroom! Vroom!")
-    elif command == "stop":
-        if started == False:
-            print("Car is at a complete stop already.")
-        else:
-            started = False
-            print("Sqeeeek, stopped.")
-    elif command == "help":
-        print(''' 
-start - to start the car
-stop - to stop the car
-quit - to quit
-            ''')
-    elif command == "quit":
-        break
-    else:
-        print("Sorry, I do not understand that command.")
+# while True:
+#     command = input(">").lower()
+#     if command == "start":
+#         if started == True:
+#             print("Car is running")
+#         else:
+#             started = True
+#             print("Vroom! Vroom!")
+#     elif command == "stop":
+#         if started == False:
+#             print("Car is at a complete stop already.")
+#         else:
+#             started = False
+#             print("Sqeeeek, stopped.")
+#     elif command == "help":
+#         print(''' 
+# start - to start the car
+# stop - to stop the car
+# quit - to quit
+#             ''')
+#     elif command == "quit":
+#         break
+#     else:
+#         print("Sorry, I do not understand that command.")
+
+
+# FOR LOOPS:
+# for item in 'Python':
+#     print(item)
+
+# for item in ['Jimmy', 'Mandy', 'Sock']:
+#     print(item)
+
+# for item in [1, 2, 3, 4]:
+#     print(item)
+
+# Below: Iterate over a large list of numbers:
+# for item in range(40):
+#     print(item)
+
+# Below: Will show numbers between 3 and 10. Includes 3 but EXCLUDES 10
+# for item in range(3, 10):
+#     print(item)
+
+# Below: The last number will be implemented as step. Meaning numbers will print adding 2. (3, 5, 7 ect. )  
+# for item in range(3, 10, 2):
+#     print(item)
+
+# SHOPPING CART TOTAL CALCULATION:
+# prices = [10, 20, 30]
+# total = 0
+
+# for cost in prices:
+#     total += cost
+
+# print(f"Total: {total}")
+
+# NESTED LOOPS: To generate coordinates.
+# for x in range(4):
+#     for y in range(3):
+#         print(f"({x},{y})")
+
+# CHALLENGE: MAKE AN 'F' WITH X'S. Don't forget--- Indents will change how the code is executed.
+# numbers = [5, 2, 5, 2, 2]
+
+# for x_count in numbers:
+#     output = ''
+#     for count in range(x_count):
+#         output += 'x'
+#     print(output)
+
+# LISTS:
+# names = ['Jimmy', 'Mandy', 'Scott', 'Naomi', 'Rowan', 'Jackie']
+# Below is an extraction from an index. Index : Rest of List or Other Index.
+# print(names[0:2])
+
+# Below: To make needed corrections to the original list:
+# names[5] = 'Jach'
+# print(names)
+
+# EXERCISE: FIND LARGEST NUMBER IN A LIST:
+# numbers = [1, 3, 5, 7, 30,  4, 10, 20]
+# max = numbers[0]
+
+# for number in numbers:
+#     if number > max:
+#         max = number
+# print(max)
+
+# 2D LISTS:
